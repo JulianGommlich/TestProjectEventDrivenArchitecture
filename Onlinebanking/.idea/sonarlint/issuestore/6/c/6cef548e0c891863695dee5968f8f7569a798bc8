@@ -1,0 +1,34 @@
+
+V	java:S1253"<This block of commented-out lines of code should be removed.(ûòä’şÿÿÿÿ
+W
+java:S1854_"<Remove this useless assignment to local variable "accounts".(æÎ“şşÿÿÿÿ
+\
+java:S1172\"ARemove these unused method parameters "account", "depositAmount".(æ±²˜øÿÿÿÿ
+H
+java:S1481_"-Remove this unused "accounts" local variable.(æÎ“şşÿÿÿÿ
+S
+java:S1128"=Remove this unused import 'com.mongodb.client.model.Filters'.(¯¸ÕÏ
+X
+java:S1128"=Remove this unused import 'com.mongodb.client.model.Updates'.(î …€ûÿÿÿÿ
+N
+java:S1128"3Remove this unused import 'javax.management.Query'.(³ì—ûşÿÿÿÿ
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
+N
+java:S1128"8Remove this unused import 'java.util.function.Function'.(»³Í
+N
+java:S1144M"3Remove this unused private "saveNewAccount" method.(Úáöúÿÿÿÿ
+q
+java:S1192P"VDefine a constant instead of duplicating this literal "OnlineBankingDatabase" 3 times.(æÎ“şşÿÿÿÿ
+»
+java:S1192O"¤Define a constant instead of duplicating this literal "mongodb+srv://admin:test1234@cluster0.2fvse.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 3 times.(ùú
+c
+java:S1192@"NDefine a constant instead of duplicating this literal "accountNumber" 3 times.(Ú‡ÀH
+d
+java:S1192P"IDefine a constant instead of duplicating this literal "Accounts" 3 times.(æÎ“şşÿÿÿÿ
+d
+java:S2095]"IUse try-with-resources or close this "MongoClient" in a "finally" clause.(¨ŒØúÿÿÿÿ
+d
+java:S2095N"IUse try-with-resources or close this "MongoClient" in a "finally" clause.(¨ŒØúÿÿÿÿ
+d
+java:S2095U"IUse try-with-resources or close this "MongoClient" in a "finally" clause.(¨ŒØúÿÿÿÿ

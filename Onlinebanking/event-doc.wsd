@@ -1,0 +1,53 @@
+@startuml "create a new account"
+actor User
+participant EventInitiator
+participant CreateAccount
+participant Repository
+database Account
+
+User -> EventInitiator : Trigger event
+EventInitiator -> CreateAccount : Create new account
+CreateAccount -> Repository : Presist new account
+Repository -> Account : Interact with database
+Repository -> CreateAccount : Inform about action
+CreateAccount -> EventInitiator : Inform about action
+EventInitiator -> User : Inform about action
+@enduml
+
+@startuml "deposit money"
+actor User
+participant EventInitiator
+participant CheckCredentials
+participant Deposit
+participant Repository
+database Account
+
+User -> EventInitiator : Trigger event
+EventInitiator -> CheckCredentials : Check whether pin code is correct
+CheckCredentials -> EventInitiator : Inform abount result of credential check
+EventInitiator -> Deposit : Start deposit process
+Deposit -> Repository : Update account
+Repository -> Account : Interact with database
+Repository -> Deposit : Inform about action
+Deposit -> EventInitiator : Inform about action
+EventInitiator -> User : Inform about action
+@enduml
+
+@startuml "pay money out"
+actor User
+participant EventInitiator
+participant CheckCredentials
+participant Payout
+participant Repository
+database Account
+
+User -> EventInitiator : Trigger event
+EventInitiator -> CheckCredentials : Check whether pin code is correct
+CheckCredentials -> EventInitiator : Inform abount result of credential check
+EventInitiator -> Payout : Start payout process
+Payout -> Repository : Update account
+Repository -> Account : Interact with database
+Repository -> Payout : Inform about action
+Payout -> EventInitiator : Inform about action
+EventInitiator -> User : Inform about action
+@enduml
